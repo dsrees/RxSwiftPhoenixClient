@@ -1,2 +1,2 @@
 github "ReactiveX/RxSwift" ~> 6.0
-github "davidstump/SwiftPhoenixClient" "dr/remove-starscream-and-rxswift-dependencies"
+github "davidstump/SwiftPhoenixClient" ~> 5.0

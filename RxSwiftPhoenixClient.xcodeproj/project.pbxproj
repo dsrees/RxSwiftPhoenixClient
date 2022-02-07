@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6305548327B1865B007258D5 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6305548127B1865B007258D5 /* Quick.xcframework */; };
+		6305548427B1865B007258D5 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6305548227B1865B007258D5 /* Nimble.xcframework */; };
+		6305548827B186BB007258D5 /* MockableClass.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305548627B186BB007258D5 /* MockableClass.generated.swift */; };
+		6305548927B186BB007258D5 /* MockableProtocol.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6305548727B186BB007258D5 /* MockableProtocol.generated.swift */; };
 		632BBEFF27B174CA00BCA500 /* RxSwiftPhoenixClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632BBEF627B174C900BCA500 /* RxSwiftPhoenixClient.framework */; };
 		632BBF0427B174CA00BCA500 /* ChannelRxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632BBF0327B174CA00BCA500 /* ChannelRxSpec.swift */; };
 		632BBF0527B174CA00BCA500 /* RxSwiftPhoenixClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 632BBEF927B174C900BCA500 /* RxSwiftPhoenixClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6305548127B1865B007258D5 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		6305548227B1865B007258D5 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
+		6305548627B186BB007258D5 /* MockableClass.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockableClass.generated.swift; sourceTree = "<group>"; };
+		6305548727B186BB007258D5 /* MockableProtocol.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockableProtocol.generated.swift; sourceTree = "<group>"; };
 		632BBEF627B174C900BCA500 /* RxSwiftPhoenixClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftPhoenixClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632BBEF927B174C900BCA500 /* RxSwiftPhoenixClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftPhoenixClient.h; sourceTree = "<group>"; };
 		632BBEFE27B174CA00BCA500 /* RxSwiftPhoenixClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftPhoenixClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6305548327B1865B007258D5 /* Quick.xcframework in Frameworks */,
+				6305548427B1865B007258D5 /* Nimble.xcframework in Frameworks */,
 				634CF66C27B17ECC00A40606 /* RxSwift.xcframework in Frameworks */,
 				634CF66D27B17ECC00A40606 /* SwiftPhoenixClient.xcframework in Frameworks */,
 				632BBEFF27B174CA00BCA500 /* RxSwiftPhoenixClient.framework in Frameworks */,
@@ -81,11 +91,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		632BBEEC27B174C900BCA500 = {
+		6305547F27B185F4007258D5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				632BBEF827B174C900BCA500 /* RxSwiftPhoenixClient */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6305548027B1860F007258D5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6305548527B186BB007258D5 /* Mocks */,
 				632BBF0227B174CA00BCA500 /* RxSwiftPhoenixClientTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6305548527B186BB007258D5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6305548627B186BB007258D5 /* MockableClass.generated.swift */,
+				6305548727B186BB007258D5 /* MockableProtocol.generated.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		632BBEEC27B174C900BCA500 = {
+			isa = PBXGroup;
+			children = (
+				6305547F27B185F4007258D5 /* Sources */,
+				6305548027B1860F007258D5 /* Tests */,
 				632BBEF727B174C900BCA500 /* Products */,
 				632BBF0E27B174DB00BCA500 /* Frameworks */,
 			);
@@ -121,6 +157,8 @@
 		632BBF0E27B174DB00BCA500 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6305548227B1865B007258D5 /* Nimble.xcframework */,
+				6305548127B1865B007258D5 /* Quick.xcframework */,
 				634CF63927B175D100A40606 /* RxSwift.xcframework */,
 				634CF63827B175D100A40606 /* SwiftPhoenixClient.xcframework */,
 				632BBF1027B174DB00BCA500 /* RxSwift.xcframework */,
@@ -240,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6305548927B186BB007258D5 /* MockableProtocol.generated.swift in Sources */,
 				634CF66B27B17BC600A40606 /* StarscreamTransport.swift in Sources */,
 				634CF63727B1754200A40606 /* Channel+Rx.swift in Sources */,
+				6305548827B186BB007258D5 /* MockableClass.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
