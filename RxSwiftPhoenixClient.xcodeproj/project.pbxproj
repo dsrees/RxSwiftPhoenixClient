@@ -15,6 +15,9 @@
 		634CF63B27B175D100A40606 /* SwiftPhoenixClient.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 634CF63827B175D100A40606 /* SwiftPhoenixClient.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		634CF63C27B175D100A40606 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634CF63927B175D100A40606 /* RxSwift.xcframework */; };
 		634CF63D27B175D100A40606 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 634CF63927B175D100A40606 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		634CF66B27B17BC600A40606 /* StarscreamTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634CF66A27B17BC600A40606 /* StarscreamTransport.swift */; };
+		634CF66C27B17ECC00A40606 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634CF63927B175D100A40606 /* RxSwift.xcframework */; };
+		634CF66D27B17ECC00A40606 /* SwiftPhoenixClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634CF63827B175D100A40606 /* SwiftPhoenixClient.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		634CF63627B1754200A40606 /* Channel+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Channel+Rx.swift"; sourceTree = "<group>"; };
 		634CF63827B175D100A40606 /* SwiftPhoenixClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftPhoenixClient.xcframework; path = Carthage/Build/SwiftPhoenixClient.xcframework; sourceTree = "<group>"; };
 		634CF63927B175D100A40606 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		634CF66A27B17BC600A40606 /* StarscreamTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamTransport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634CF66C27B17ECC00A40606 /* RxSwift.xcframework in Frameworks */,
+				634CF66D27B17ECC00A40606 /* SwiftPhoenixClient.xcframework in Frameworks */,
 				632BBEFF27B174CA00BCA500 /* RxSwiftPhoenixClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +105,7 @@
 			children = (
 				632BBEF927B174C900BCA500 /* RxSwiftPhoenixClient.h */,
 				634CF63627B1754200A40606 /* Channel+Rx.swift */,
+				634CF66A27B17BC600A40606 /* StarscreamTransport.swift */,
 			);
 			path = RxSwiftPhoenixClient;
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634CF66B27B17BC600A40606 /* StarscreamTransport.swift in Sources */,
 				634CF63727B1754200A40606 /* Channel+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

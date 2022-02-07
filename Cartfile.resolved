@@ -1,2 +1,4 @@
+github "Quick/Nimble" "v9.2.1"
+github "Quick/Quick" "v4.0.0"
 github "ReactiveX/RxSwift" "6.5.0"
-github "davidstump/SwiftPhoenixClient" "e294cccc6a9fafaadfa6553d61f19315b0b9593e"
+github "davidstump/SwiftPhoenixClient" "f73a7ab1de719159a12006644f4e15f95fb9641c"
